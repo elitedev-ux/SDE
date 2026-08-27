@@ -12,11 +12,42 @@ dist
 dist-ssr
 *.local
 
+# Local Codex skills and agent configuration
+skills/
+**/skills/
+.agents/
+.codex/
+
+# Environment variables and private credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+
+# Test and coverage output
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+
+# Temporary and cache files
+.cache/
+.vite/
+tmp/
+temp/
+*.tmp
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store
+Thumbs.db
+desktop.ini
 *.suo
 *.ntvs*
 *.njsproj
